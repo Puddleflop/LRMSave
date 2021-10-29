@@ -15,13 +15,7 @@
 
 params[];
 
-if (isServer) then {
-	private _databaseName = lrms_lrmName;
-};
+private _databaseName = lrms_lrmName;
 
-if (hasInterface) then {
-	private _playerUID = getPlayerUID player;
-	private _databaseName = lrms_lrmName + _playerUID;
-};
-private _database = ["new", _databaseName] call 00_inIDBI;
+private _database = ["new", _databaseName] call OO_INIDBI;
 _database
