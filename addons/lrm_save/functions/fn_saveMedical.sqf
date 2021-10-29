@@ -73,3 +73,4 @@ if (isClass(configFile >> "CfgPatches" >> "ace_medical")) then {
 	playerdamage = damage player;
 	["write", [_sectionName, "medical", playerdamage]] call _database;
 };
+true

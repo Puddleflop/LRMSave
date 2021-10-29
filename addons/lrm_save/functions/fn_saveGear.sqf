@@ -34,6 +34,6 @@ if !(isnil "acre_api_fnc_getCurrentradiolist") then {
 	} forEach _playerRadios;
 	["write", [_sectionName, "radio", _playerRadiolist]] call _database;
 };
-True
+true
 //TODO
 //Add TFAR support if possible.

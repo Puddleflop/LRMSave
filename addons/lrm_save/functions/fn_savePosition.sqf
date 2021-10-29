@@ -21,4 +21,4 @@ _playerStance = stance player;
 _playerDirection = getDir player;
 _playerInfo = [_playerPos, _playerStance, _playerDirection];
 ["write", [_sectionName, "position", _playerInfo]] call _database;
-True
+true

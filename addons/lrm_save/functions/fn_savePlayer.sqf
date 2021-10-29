@@ -28,3 +28,4 @@ if (lrms_playerGear) then {
 if (lrms_playerMedical) then {
 	[_database, _sectionName] call lrms_fnc_saveMedical;
 };
+true
