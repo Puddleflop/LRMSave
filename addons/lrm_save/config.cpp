@@ -19,10 +19,6 @@ class cfgFunctions
         class functions
         {
             tag = lrms;
-            class initDB
-            {
-                file = "\lrm_save\functions\fn_initDB.sqf";
-            };
             class initLRM
             {
                 file = "\lrm_save\functions\fn_initLRM.sqf";
@@ -69,5 +65,13 @@ class Extended_PreInit_EventHandlers
     class LRMS_CBA_Settings
     {
         init = "call compile preprocessFileLineNumbers '\lrm_save\XEH_preInit.sqf'";
+    };
+};
+
+class Extended_PostInit_EventHandlers
+{
+    class LRMS_CBA_Settings
+    {
+        init = "call compile preprocessFileLineNumbers '\lrm_save\XEH_postInit.sqf'";
     };
 };

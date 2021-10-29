@@ -24,7 +24,7 @@ if !(isnil "acre_api_fnc_getCurrentradiolist") then {
 	private _playerRadioList = call acre_api_fnc_getCurrentradiolist;
 	if !(count _playerRadioList == 0) then {
 		try {
-			_playerradios = ["read", [_section, "radio"]] call _database;
+			_playerradios = ["read", [_sectionName, "radio"]] call _database;
 			{
 				// loads the radio settings
 				_currentradiosettings = _playerradios select _forEachindex;
