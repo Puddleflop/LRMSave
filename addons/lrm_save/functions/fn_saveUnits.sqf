@@ -1,6 +1,6 @@
 /*
  * Author: Puddleflop
- * Save a player's gear to their database.
+ * Save a units's gear and position.
  *
  * Arguments:
  * 0: 
@@ -12,4 +12,3 @@
  * 
  *
 */
-

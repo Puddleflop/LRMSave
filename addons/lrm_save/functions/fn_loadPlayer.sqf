@@ -15,9 +15,12 @@
 
 params ["_database"];
 
+
 private _sections = "getSections" call _database;
 private _numberSections = count _sections;
 if (_numberSections < 2) exitwith {false};
+
+player isDamageAllowed false;
 
 private _sectionName = _sections select _numberSections - 1;
 if (lrms_playerPosition) then {
@@ -31,5 +34,7 @@ if (lrms_playerGear) then {
 if (lrms_playerMedical) then {
 	[_database, _sectionName] call lrms_fnc_loadMedical;
 };
+
+player isDamageAllowed true;
 
 true

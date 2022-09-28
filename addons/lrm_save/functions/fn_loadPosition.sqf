@@ -24,7 +24,7 @@ player setDir _playerDirection;
 switch (_playerInfo select 1) do
 {
 	case "STAND":{
-	player playAction "PlayerStand"; 
+		player playAction "PlayerStand"; 
 	};
 	case "PRONE":{
 		player playAction "PlayerProne";
